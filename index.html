@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nikolai Ønskeliste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .item p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .item a {
+            color: #0066c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .item a:hover {
+            color: #ff6600;
+        }
+        @media (max-width: 768px) {
+            .item {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .item {
+                width: 100%;
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Nikolai Ønskeliste
+    </div>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="item">
+            <a href="https://example.com/product1" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 1">
+            </a>
+            <p><a href="https://example.com/product1" target="_blank">Product 1</a></p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="item">
+            <a href="https://example.com/product2" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 2">
+            </a>
+            <p><a href="https://example.com/product2" target="_blank">Product 2</a></p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="item">
+            <a href="https://example.com/product3" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 3">
+            </a>
+            <p><a href="https://example.com/product3" target="_blank">Product 3</a></p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="item">
+            <a href="https://example.com/product4" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 4">
+            </a>
+            <p><a href="https://example.com/product4" target="_blank">Product 4</a></p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="item">
+            <a href="https://example.com/product5" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 5">
+            </a>
+            <p><a href="https://example.com/product5" target="_blank">Product 5</a></p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="item">
+            <a href="https://example.com/product6" target="_blank">
+                <img src="https://via.placeholder.com/300" alt="Product 6">
+            </a>
+            <p><a href="https://example.com/product6" target="_blank">Product 6</a></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 My Online Store. All rights reserved.
+    </footer>
+
+</body>
+</html>
